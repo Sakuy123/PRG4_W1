@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar innerHTML di HTML</title>
+</head>
+<body>
+    <h1>Selamat datang di halaman web ini</h1>
+    <p id="paragraf">ini adalah contoh teks. Klik tombol untuk mengubahnya.\</p>
+    <button onclick="ubahTeks()">Klik untuk mengubah teks</button>
+
+    <script>
+        function ubahTeks(){
+            var paragrafElemen = document.getElementById("paragraf");
+            paragrafElemen.innerHTML = "Teks telah diubah menggunakan innerHTML";
+        }
+    </script>
+</body>
+</html>
